@@ -12,6 +12,9 @@
 #     install.packages("devtools")
 # devtools::install_github("xlucpu/MOVICS")
 
+# https://cran.r-project.org/src/contrib/Archive/heatmap.plus/
+# install.packages("heatmap.plus_1.3.tar.gz", repos = NULL, type="source")
+
 library(MOVICS)
 set.seed(4444)
 
@@ -27,11 +30,11 @@ rasterImage(jj,0,0,1,1)
 
 
 # install.packages("Rfssa") if you want to download through github
-library(Rfssa)
-url <- "https://github.com/KechrisLab/ASAShortCourse-MultiOmics/blob/main/Lecture%202/brca_dat.Rdata"
-load_github_data(url)
+# library(Rfssa)
+# url <- "https://github.com/KechrisLab/ASAShortCourse-MultiOmics/blob/main/Lecture%202/brca_dat.Rdata"
+# load_github_data(url)
 
-# load("brca_dat.Rdata")
+load("brca_dat.Rdata")
 
 # let's get a quick look at our data
 names(brca_dat)
